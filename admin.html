@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.0.2/tablesort.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.0.2/tablesort.number.js" defer></script>
+	
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="three.min.js" defer></script>
+	<script src="vanta.net.min.js" defer></script>
+	<script src="js/auto.js" defer></script>
+	<script src="js/test.js" defer></script>
+	<script src="js/search.js" defer></script>
+	<script src="js/sortTable.js" defer></script>
+</head>
+<body class="auto" id="auto">
+
+<div class="form-box form-box_admin" >
+
+	<div class="admin-tabs">
+	<input class="input-admin" type="radio" name="tabs" id="tab-1" checked>
+	<input class="input-admin" type="radio" name="tabs" id="tab-2">
+	<input class="input-admin" type="radio" name="tabs" id="tab-3">
+	<input class="input-admin" type="radio" name="tabs" id="tab-4">
+	<label for="tab-1" class="tab-admin-title">Создать</label>
+	<label for="tab-2" class="tab-admin-title" >Викторины </label>
+	<label for="tab-3" class="tab-admin-title"> Результаты</label>
+	<label for="tab-4" class="tab-admin-title">Таб </label>
+
+	<div class=" admin-content-0 ">
+		<form action="index.html" class="form-back-btn">
+		<button class="form-auto-btn btn-admin-back" type="submit" >Назад</button>
+	</form>
+	</div>
+
+	<div class="tab-admin_content form-box admin-content-1 ">
+				 
+				 
+					<!-- Main Content -->
+					<div class="container quiz-add" id="container">
+						<!-- Configue Quiz -->
+						<div class="quizConfig-container">
+						<div class="quizConfig" id="quizConfig">
+						 <form class="">
+							 <div class="">
+								 <div class="input-field ">
+									 <label class="input-title" for="questions">Название Викторины</label>
+									 <input placeholder="Название" id="qName" type="text" class="form-auto-input form-style" style="margin-bottom: 20px;">
+									 
+								 </div>
+								 <div class="input-field ">
+									<label class="input-title" for="questions">Количество вопросов</label>
+									<input placeholder="1 - 100" id="qTotal" type="number" class="form-auto-input form-style" style="margin-bottom: 20px;">
+									
+								</div>
+								 </div>
+						 </form>
+						 <!-- Create questions -->
+						 <div class=" create-btn">
+							 <a id="generateBtn" class="form-auto-btn form-admin-btn" style="	margin-left: 0px;">Далее</a>
+						 </div>
+						</div>
+				 </div>
+						 <!-- Quiz Form -->
+						<div id="formContainer" class="formContainer ">
+						 <form id="quizForm" class="col s12 quizForm hide">
+							 <!-- Title -->
+							 <div class="input-container">
+								 <div class="input-field  col m6 s12">
+									 <label class="input-title" for="question_title">Вопрос</label>
+									 <input id="title" placeholder="Введите вопрос" type="text" autocomplete="off" class="validate form-auto-input form-style">
+									 
+								 </div>
+							 </div>
+							 <!-- User Input 1 -->
+							 <div class="input-container">
+								 <div class="input-field col s12 m6">
+									 <label class="input-title" >Вариант ответа A</label>
+									 <input id="input1" placeholder="Введите вариант ответа" type="text" autocomplete="off" class="validate form-auto-input form-style">
+									 
+								 </div>
+							 </div>
+							 <!-- User Input 2 -->
+							 <div class="input-container">
+								 <div class="input-field col s12 m6">
+									 <label class="input-title" >Вариант ответа B</label>
+									 <input id="input2" placeholder="Введите вариант ответа" type="text" autocomplete="off" class="validate form-auto-input form-style">
+									 
+								 </div>
+							 </div>
+				 
+							 <!--User Input 3 -->
+							 <div class="input-container">
+								 <div class="input-field col s12 m6">
+									 <label class="input-title" >Вариант ответа C</label>
+									 <input id="input3" placeholder="Введите вариант ответа" type="text" autocomplete="off" class="validate form-auto-input form-style">
+									 
+								 </div>
+							 </div>
+							<!--User Input 4 -->
+							 <div class="input-container">
+								 <div class="input-field col s12 m6">
+									 <label class="input-title" >Вариант ответа D</label>
+									 <input id="input4" placeholder="Введите вариант ответа" type="text" autocomplete="off" class="validate form-auto-input form-style">
+									 
+								 </div>
+							 </div>
+							 <!--Correct Answer-->
+							 <div class="input-container">
+								 <div class="input-field col s12 m6">
+									 <label class="input-title">Правильный ответ</label>
+								
+									 <input id="correctValue" placeholder="Enter the correct answer. A,B,C,D?" type="text" autocomplete="off" class="validate form-auto-input form-style">
+									 
+								 </div>
+							 </div>
+				 
+							 <!-- Submit Button -->
+							 <div id="submitBtn" class="col s6">
+								 <a id="submit" class="form-auto-btn form-admin-btn">Добавить вопрос</a>
+							 </div>
+						 </form>
+					 </div>
+					
+					
+					 </div>
+	</div>
+
+
+
+
+
+
+
+	<div class="tab-admin_content form-box admin-content-2 ">
+		
+		<table class="table  table-admin" >
+				<div class="table-head">
+					<thead>
+						<tr class="row_h" >
+							<th scope="col" class="q1"><input type="text" class="search-input" placeholder="ID Викторины"></th>
+							<th scope="col" class="q2"><input type="text" class="search-input" placeholder="Название"></th>
+							
+							<th scope="col" class="q4 q4_1">Результаты</th>
+				  	</tr>
+					</thead>
+				</div>
+		
+				<div >
+					<tbody class="table-body" id="table-admin">
+				<tr class="row_h1" >
+					<td class="q1_1"> 12345</td>
+					<td class="q2_2">Название</td>
+				
+					<td class="q4"> <button class="form-auto-btn form-admin-btn" type="submit" >Результаты</button></td>
+					
+				</tr>
+				<tr class="row_h">
+					<td>12345</td>
+					<td >ret</td>
+					
+					<td><button class="form-auto-btn form-admin-btn" type="submit" >Результаты</button></td>
+					
+
+				</tr>
+				<tr  class="row_h">
+					<td>12345</td>
+					<td >Название</td>
+					
+					<td><button class="form-auto-btn form-admin-btn" type="submit" >Результаты</button></td>
+					
+				</tr>
+				
+
+					</tbody>
+				</div>
+		</table>
+		
+	</div>
+	
+
+
+
+
+
+
+
+
+	<div id="tab-admin-1" class="tab-admin_content form-box admin-content-3 ">
+	<div class="id-container">
+		<div class=" ">
+			<label class="result-id-title" for="questions">Введите ID викторины: </label>
+			<input placeholder="ID" id="id-input" type="text" class="form-auto-input form-style result-id-input" ">
+		
+				<a  class="form-auto-btn form-admin-btn result-id-btn">Далее</a>
+			
+		</div>
+	</div>
+	<div class="result-container">
+		<table id="table-id"  class="table table-fixed">
+			<thead>
+				<tr>
+					<th scope="col">ID студента</th>
+					<th scope="col">ФИО</th>
+					<th scope="col">Время прохождения</th>
+					<th scope="col">Правильных ответов</th>
+					<th scope="col">Очки</th>
+					<th scope="col">Результат</th>
+				</tr>
+			</thead>
+			<tbody class="table-result-body">
+				<tr>
+					<th scope="row">18006</th>
+					<td>Владимиров И.С.</td>
+					<td>5:21</td>
+					<td>6/10</td>
+					<td>99</td>
+					<td class="r-win">Прошел</td>
+				</tr>
+				<tr>
+					<th scope="row">18017</th>
+					<td> Машинин И.С.</td>
+					<td>4:09</td>
+					<td>8/10</td>
+					<td>40</td>
+					<td class="r-win">Прошел</td>
+				</tr>
+				<tr>
+					<th scope="row">18024</th>
+					<td>Коротин Б.М.</td>
+					<td>9:19</td>
+					<td>4/10</td>
+					<td>50</td>
+					<td class="r-lose">Не прошел</td>
+				</tr>
+				<tr>
+					<th scope="row">18024</th>
+					<td>Коротин Б.М.</td>
+					<td>9:19</td>
+					<td>4/10</td>
+					<td>60</td>
+					<td class="r-lose">Не прошел</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	</div>
+	<div class="tab-admin_content form-box admin-content-4 ">
+	4	
+	</div>
+	</div>
+
+</div>
+
+</body>
+</html>

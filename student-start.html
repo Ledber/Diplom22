@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+	<script src="three.min.js" defer></script>
+	<script src="vanta.net.min.js" defer></script>
+	<script src="js/auto.js" defer></script>
+	<script src="js/script.js" defer></script>
+
+</head>
+
+<body class="auto" id="auto">
+	
+	<article class="container">
+		<div class="block">
+			<section class="block-item__item block-item">
+				<h2 class="block-item__title">Начать викторину?</h2>
+				<button class="block-item__btn form-auto-btn signin-btn">Старт</button>
+			</section>
+			<section class="block-item__item block-item">
+				<h2 class="block-item__title">Показать правила?</h2>
+				<button class="block-item__btn form-auto-btn signup-btn">Правила</button>
+			</section>
+		</div>
+		<div class="form-box-ss">
+			<form action="student-start.html" class="form-auto form-auto_signin" method="post">
+				<h3 class="form-auto-title">Введите код викторины</h3>
+				<p>
+					<input class="form-auto-input" id="ap-code" type="password" name="code" placeholder="12345">
+				</p>
+				<button class="form-auto-btn" type="submit" >Начать</button>
+				
+				<a href="question.html" class="test-a"> вопросы </a>
+				<a href="results.html#tab_01" class="test-a"> результаты </a>
+
+			</form>
+			<section class="form-auto form-auto_rules">
+			<!--<textarea class="text-box_rules" name="rules" id="" cols="30" rows="12">-->
+			<p class="text-rules">	Правила бла бла бла, бла бла бла, блаблабла</p>
+			<p class="text-rules">	Правила бла бла бла, бла бла бла, блаблабла</p>
+			<p class="text-rules">	Правила бла бла бла, бла бла бла, блаблабла</p>
+			<p class="text-rules">	Правила бла бла бла, бла бла бла, блаблабла</p>
+			<p class="text-rules">	Правила бла бла бла, бла бла бла, блаблабла</p>
+			</textarea>
+			</section>
+		</div>
+		
+	</article>
+
+</body>
+
+</html>
