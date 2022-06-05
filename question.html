@@ -26,54 +26,61 @@
 	<script src="js/auto.js" defer></script>
 	<script src="js/script.js" defer></script>
 
+	<script src="js/questions.js" defer></script>
 </head>
 
 <body class="auto" id="auto">
+
+	<div class="question-timer" id="timer">
+		00:00:00
+	</div>
+
 	<div class="form-box form-box_question">
 		<div class="quiz" id="quiz">
 			<div class="quiz-header" id="header">
 				<h2 class="title-question"> Загрузка вопроса...</h2>
-				<!--<h2 class="title">%title%</h2>
-				<h3 class="summary">%message%</h3>
-				<p class="result">%result%</p>-->
+					
 			</div>
 		
-		<ul class="quiz-list" id="list">
-			<li>
-				<label class="label-check">
-					<input type="radio" name="answer" id="" class="answer" value="ans1">
-					<span class="custom-radio"></span>
-					<span>Ответ..</span>
+			<ul class="quiz-list" id="list">
+				<li>
+					<label class="label-check">
+						<input type="radio" name="answer" id="" class="answer" value="ans1">
+						<span class="custom-radio"></span>
+						<span>Ответ..</span>
+					</label>
+				</li>
+				<li>
+					<label class="label-check" >
+						<input type="radio" name="answer" id="" class="answer" value="ans2" >
+						<span class="custom-radio"></span>
+						<span>Ответ..</span>
 				</label>
-			</li>
-			<li>
-				<label class="label-check" >
-					<input type="radio" name="answer" id="" class="answer" value="ans2" >
-					<span class="custom-radio"></span>
-					<span>Ответ..</span>
-			</label>
-			</li>
-			<li>
-				<label class="label-check" >
-					<input type="radio" name="answer" id="" class="answer" value="ans3" >
-					<span class="custom-radio"></span>
-					<span >Ответ..</span>
-				</label>
-			</li>
-			<li>
-				<label class="label-check">
-					<input type="radio" name="answer" id="" class="answer" value="ans4" >
-					<span class="custom-radio"></span>
-					<span>Ответ..</span>
-				</label>
-			</li>
-		</ul>
-
-		<button class="quiz-submit submit" id="submit">Ответить</button>
-
-		</div>
-	</div>
+				</li>
+				<li>
+					<label class="label-check" >
+						<input type="radio" name="answer" id="" class="answer" value="ans3" >
+						<span class="custom-radio"></span>
+						<span >Ответ..</span>
+					</label>
+				</li>
+				<li>
+					<label class="label-check">
+						<input type="radio" name="answer" id="" class="answer" value="ans4" >
+						<span class="custom-radio"></span>
+						<span>Ответ..</span>
+					</label>
+				</li>
+			</ul>
 	
-</body>
-
-</html>
+			<button class="quiz-submit submit" id="submit">Ответить</button>
+	
+			</div>
+		</div>
+		
+		<div class="progressBar" id="timer">
+			<div class="progressBar-line"></div>
+		</div>
+	</body>
+	
+	</html>

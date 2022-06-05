@@ -27,6 +27,7 @@
 	<script src="vanta.net.min.js" defer></script>
 	<script src="js/auto.js" defer></script>
 	<script src="js/script.js" defer></script>
+	<script src="js/result-student.js" defer></script>
 
 </head>
 
@@ -44,90 +45,62 @@
 					<span class="text1"> Время прохождения: </span>
 					<span class="text2"> 	Всего вопросов:</span>
 				</div>-->
-				<div class="tabs-result__block-1 ">
-				<span class="text-result text-result_1 ">	Время прохождения:
-					<span class="point-result">
-						%время%
+				<div class="tabs-result__block-1 " id="res-1">
+					<span class="text-result text-result_1 ">	Время прохождения:
+						<span class="point-result">
+							%время%
+						</span>
+					 </span>
+					<span class="text-result text-result_2"> 
+						Всего вопросов:
+						<span class="point-result">
+							%количесво%
+						</span>
+					 </span>
+					<span class="text-result text-result_3"> 
+						Правильных ответов:
+						<span class="point-result">
+							%количество%
+						</span>
+					 </span>
+					<span class="text-result text-result_4"> 
+						Набранные очки:
+						<span class="point-result">
+							%количесво%
+						</span>
+					 </span>
+					<span class="text-result text-result_5"> 
+						Результат
+						<span class="point-result">
+							%Вы прошли викторину% 
+						</span>
+						<span class="point-result">						
+							%Вы не прошли викторину%
+						</span>
 					</span>
-				 </span>
-				<span class="text-result text-result_2"> 
-					Всего вопросов:
-					<span class="point-result">
-						%количесво%
-					</span>
-				 </span>
-				<span class="text-result text-result_3"> 
-					Правильных ответов:
-					<span class="point-result">
-						%количество%
-					</span>
-				 </span>
-				<span class="text-result text-result_4"> 
-					Набранные очки:
-					<span class="point-result">
-						%количесво%
-					</span>
-				 </span>
-				<span class="text-result text-result_5"> 
-					Результат
-					<span class="point-result">
-						%Вы прошли викторину% 
-					</span>
-					<span class="point-result">						
-						%Вы не прошли викторину%
-					</span>
-				</span>
-			</div>
-			</div>
-			<div class="tabs-result__body">
-				<div id="tab_02" class="tabs-result__block">
-					<table class="table table-hover">
-						<thead>
-							<tr >
-								<th scope="col">№</th>
-								<th scope="col">Вопрос</th>
-								<th scope="col">Ваш ответ</th>
-								<th scope="col">Правильный ответ</th>
-								<th scope="col">Очки</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td >Вопрос</td>
-								<td>Ваш ответ</td>
-								<td>Правильный ответ</td>
-								<td>1</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td >Вопрос</td>
-								<td>Ваш ответ</td>
-								<td>Правильный ответ</td>
-								<td>2</td>
-	
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td >Вопрос</td>
-								<td>Ваш ответ</td>
-								<td>Правильный ответ</td>
-								<td>3</td>
-							</tr>
-							<tr>
-								<th scope="row">4</th>
-								<td >Вопрос</td>
-								<td>Ваш ответ</td>
-								<td>Правильный ответ</td>
-								<td>4</td>
-							</tr>
-							<tr>
-								<th scope="row">5</th>
-								<td >Вопрос</td>
-								<td>Ваш ответ</td>
-								<td>Правильный ответ</td>
-								<td>5</td>
-							</tr>
+				</div>
+				</div>
+				<div class="tabs-result__body">
+					<div id="tab_02" class="tabs-result__block">
+						<table class="table table-hover">
+							<thead>
+								<tr >
+									<th scope="col">№</th>
+									<th scope="col">Вопрос</th>
+									<th scope="col">Ваш ответ</th>
+									<th scope="col">Правильный ответ</th>
+									<th scope="col">Очки</th>
+								</tr>
+							</thead>
+							<tbody id="res-2">
+								<tr id="res-22">
+									<th scope="row">1</th>
+									<td >Вопрос</td>
+									<td>Ваш ответ</td>
+									<td>Правильный ответ</td>
+									<td>1</td>
+								</tr>
+									
 							
 						</tbody>
 					</table>
